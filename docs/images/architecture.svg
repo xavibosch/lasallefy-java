@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a0a"/>
+      <stop offset="1" stop-color="#161616"/>
+    </linearGradient>
+    <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5B8DEF"/>
+      <stop offset="1" stop-color="#3F6FD8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- subtle grid -->
+  <g opacity="0.05" stroke="#fff" stroke-width="1">
+    <path d="M0 200 H1600 M0 400 H1600 M0 500 H1600 M0 700 H1600"/>
+    <path d="M200 0 V900 M400 0 V900 M600 0 V900 M800 0 V900 M1000 0 V900 M1200 0 V900 M1400 0 V900"/>
+  </g>
+
+  <!-- logo -->
+  <text x="800" y="290" text-anchor="middle"
+        font-family="-apple-system, Helvetica, Arial, sans-serif"
+        font-weight="900" font-size="180" letter-spacing="-6"
+        fill="url(#logoGrad)">
+    laSallefy
+  </text>
+
+  <text x="800" y="345" text-anchor="middle"
+        font-family="ui-monospace, Menlo, monospace"
+        font-size="22" letter-spacing="8"
+        fill="#7a7a7a">
+    REAL-TIME AUDIO SYNTHESIS · JAVA
+  </text>
+
+  <!-- 4 waveforms -->
+  <g stroke-width="3" fill="none" opacity="0.95">
+    <!-- SINE -->
+    <g transform="translate(160 540)">
+      <text x="0" y="-22" font-family="ui-monospace, Menlo, monospace" font-size="14" letter-spacing="4" fill="#aaa">SINE</text>
+      <path d="M0 60 Q 35 0 70 60 T 140 60 T 210 60 T 280 60" stroke="#fff"/>
+    </g>
+    <!-- SQUARE -->
+    <g transform="translate(560 540)">
+      <text x="0" y="-22" font-family="ui-monospace, Menlo, monospace" font-size="14" letter-spacing="4" fill="#aaa">SQUARE</text>
+      <path d="M0 100 V20 H40 V100 H80 V20 H120 V100 H160 V20 H200 V100 H240 V20 H280" stroke="#fff"/>
+    </g>
+    <!-- TRIANGLE -->
+    <g transform="translate(960 540)">
+      <text x="0" y="-22" font-family="ui-monospace, Menlo, monospace" font-size="14" letter-spacing="4" fill="#aaa">TRIANGLE</text>
+      <path d="M0 100 L35 20 L70 100 L105 20 L140 100 L175 20 L210 100 L245 20 L280 100" stroke="#fff"/>
+    </g>
+    <!-- SAWTOOTH -->
+    <g transform="translate(1360 540)">
+      <text x="0" y="-22" font-family="ui-monospace, Menlo, monospace" font-size="14" letter-spacing="4" fill="#aaa">SAW</text>
+      <path d="M0 100 L70 20 L70 100 L140 20 L140 100 L210 20 L210 100" stroke="#fff"/>
+    </g>
+  </g>
+
+  <!-- bottom meta -->
+  <text x="80" y="830" font-family="ui-monospace, Menlo, monospace" font-size="13" letter-spacing="4" fill="#666">
+    LA SALLE · POO · 2026
+  </text>
+  <text x="1520" y="830" text-anchor="end" font-family="ui-monospace, Menlo, monospace" font-size="13" letter-spacing="4" fill="#666">
+    javax.sound.sampled
+  </text>
+</svg>
